@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Post set",
+  "type": "array",
+  "items": {
+    "title": "Post",
+    "type": "object",
+    "properties": {
+      "userId": {
+        "description": "The Id for a user",
+        "type": "number"
+      },
+      "id": {
+        "description": "The unique identifier for a post",
+        "type": "number"
+      },
+      "title": {
+        "type": "string"
+      },
+      "body": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["id", "userId"],
+  "minItems": 1,
+  "uniqueItems": true
+}
